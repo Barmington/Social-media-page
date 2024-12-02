@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  display: flex;
+  gap: 1rem;
+  color: blue;
+  justify-content: flex-end;
+  width: 60vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.post {
+  background-color: rgb(204, 226, 245);
+  gap: 1rem;
+  align-items: flex-start;
+  width: 75vw;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px;
+}
+.content {
+  width: 99%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 3px;
+  background-color: white;
+  margin-left: 3px;
+}
