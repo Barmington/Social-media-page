@@ -32,12 +32,11 @@ export default async function UserPage(req, res) {
         {users.map(user => (
           <div
             key={user.id}
-            className="ml-4 mt-4 text-amber-600 lg:font-semibold font-mono"
+            className="ml-4 mt-4 text-amber-600 lg:font-semibold font-mono text-xl"
           >
             <h3>
               {user.first_name} {user.last_name}
             </h3>
-            <p>{user.emailAddress}</p>
           </div>
         ))}
       </div>

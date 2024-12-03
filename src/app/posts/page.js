@@ -22,7 +22,7 @@ export default async function PostsPage() {
   return (
     <div>
       <div className="ml-40">
-        <h1>Make a posts here</h1>
+        <h1 className="text-xl text-teal-800">Make a posts here</h1>
         <SignedIn>
           <form action={handleSubmit}>
             <textarea
@@ -31,7 +31,7 @@ export default async function PostsPage() {
               placeholder="Write you posts here!"
               required
             ></textarea>
-            <button className="border bg-orange-200 text-black border-black hover:bg-green-700 hover:text-white rounded-md w-32 text-center mb-4 mt-2">
+            <button className=" bg-white text-black 2xl:font-bold border-green-800 border-2 hover:bg-green-700 hover:text-white hover:border-gray-950 rounded-md w-32 text-center mb-4 mt-2">
               Post
             </button>
           </form>
@@ -43,7 +43,7 @@ export default async function PostsPage() {
       </div>
       <div className="flex flex-row justify-center">
         <div className="post">
-          <p className="mt-3">{user.firstName}</p>
+          <p className="mt-3 ml-2 text-black text-xl">{user.firstName}</p>
 
           {posts.map(post => (
             <div key={post.id}>

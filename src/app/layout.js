@@ -13,9 +13,11 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body>
-          <div className="flex justify-between items-center border rounded-md h-12 shadow-lg my-3 p-3 bg-slate-100">
+          <div className="flex justify-between items-center border rounded-md h-16 shadow-lg my-3 p-3 bg-slate-100">
             <div>
-              <h4 className="text-cyan-600 text-lg w-340">Social Media Page</h4>
+              <h4 className="text-cyan-600 text-2xl w-340">
+                Social Media Page
+              </h4>
             </div>
             <div className="link">
               <Link href="/">Home</Link>
